@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "title": "Teclado mecánico Corsair K95 RGB Platinum",
+        "description": "Teclado mecánico gaming con switches Cherry MX Speed, retroiluminación RGB, y teclas programables.",
+        "price": 199.99,
+        "thumbnail": "https://example.com/teclado1.jpg",
+        "code": "K95RGB",
+        "stock": 50
+    },
+    {
+        "id": 2,
+        "title": "Teclado inalámbrico Logitech K780",
+        "description": "Teclado inalámbrico multi-dispositivo con soporte para teléfonos y tablets, y teclas cóncavas para una escritura más cómoda.",
+        "price": 79.99,
+        "thumbnail": "https://example.com/teclado2.jpg",
+        "code": "K780",
+        "stock": 30
+    },
+    {
+        "id": 3,
+        "title": "Teclado ergonómico Microsoft Sculpt",
+        "description": "Teclado ergonómico con diseño curvado y almohadilla para las muñecas para reducir la fatiga durante largas sesiones de escritura.",
+        "price": 89.99,
+        "thumbnail": "https://example.com/teclado3.jpg",
+        "code": "Sculpt",
+        "stock": 20
+    },
+    {
+        "id": 4,
+        "title": "Teclado mecánico Razer BlackWidow Elite",
+        "description": "Teclado mecánico gaming con switches Razer Green, retroiluminación RGB personalizable y reposamuñecas magnético.",
+        "price": 169.99,
+        "thumbnail": "https://example.com/teclado4.jpg",
+        "code": "BlackWidow",
+        "stock": 40
+    },
+    {
+        "id": 5,
+        "title": "Teclado compacto Apple Magic Keyboard",
+        "description": "Teclado compacto inalámbrico con batería recargable, teclas de perfil bajo y conexión Bluetooth.",
+        "price": 99.99,
+        "thumbnail": "https://example.com/teclado5.jpg",
+        "code": "MagicKeyboard",
+        "stock": 25
+    },
+    {
+        "id": 6,
+        "title": "Teclado mecánico SteelSeries Apex Pro",
+        "description": "Teclado mecánico gaming con switches ajustables OmniPoint, retroiluminación RGB y reposamuñecas magnético.",
+        "price": 199.99,
+        "thumbnail": "https://example.com/teclado6.jpg",
+        "code": "ApexPro",
+        "stock": 35
+    },
+    {
+        "id": 7,
+        "title": "Teclado compacto Dell KM636",
+        "description": "Teclado inalámbrico compacto con diseño delgado y teclas de acceso rápido para mayor comodidad.",
+        "price": 29.99,
+        "thumbnail": "https://example.com/teclado7.jpg",
+        "code": "KM636",
+        "stock": 60
+    },
+    {
+        "id": 8,
+        "title": "Teclado ergonómico Kinesis Freestyle Pro",
+        "description": "Teclado ergonómico dividido con diseño ajustable para una posición más natural de las manos.",
+        "price": 169.99,
+        "thumbnail": "https://example.com/teclado8.jpg",
+        "code": "FreestylePro",
+        "stock": 15
+    },
+    {
+        "id": 9,
+        "title": "Teclado retroiluminado Havit HV-KB558CM",
+        "description": "Teclado gaming con retroiluminación LED, teclas multimedia y diseño resistente a salpicaduras.",
+        "price": 39.99,
+        "thumbnail": "https://example.com/teclado9.jpg",
+        "code": "HV-KB558CM",
+        "stock": 45
+    },
+    {
+        "id": 10,
+        "title": "Teclado mecánico HyperX Alloy FPS Pro",
+        "description": "Teclado mecánico gaming compacto con switches Cherry MX Red, estructura de acero y modo de juego.",
+        "price": 79.99,
+        "thumbnail": "https://example.com/teclado10.jpg",
+        "code": "AlloyFPSPro",
+        "stock": 55
+    }
+]

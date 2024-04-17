@@ -1,12 +1,15 @@
 {
   "name": "desafios",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node --watch desafio2_ProductManagerAsync/ProductManager.js"
+    "start": "node --watch desafio3_EndPointsGets/src/app.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }

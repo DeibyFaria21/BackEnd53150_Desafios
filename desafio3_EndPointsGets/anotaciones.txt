@@ -1,0 +1,1 @@
+En este desafio reemplace el "getProducts" y el "getProductById", y estoy editando en paralelo la forma de guardar los productos creados nuevos con el metodo, a fin de hacerlo directamente dentro del metodo y sin una funsion externa previa.
