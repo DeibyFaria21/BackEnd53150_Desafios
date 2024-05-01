@@ -1,0 +1,26 @@
+<div>
+    <h1>Productos en tiempo real...</h1>
+
+</div>
+    
+<div>
+    <h1>Agregue acá un nuevo producto:</h1>
+    <label for="title"> Ingrese Titulo</label>
+    <input type="text" name="title" id="title">
+    <label for="description">Ingrese descripcion</label>
+    <input type="text" name="decription" id="description">
+    <label for="code"> Ingrese codigo</label>
+    <input type="text" name="code" id="code">
+    <label for="price"> Ingrese precio</label>
+    <input type="text" name="price" id="price">
+    <button type="submit" id="btn-send">Enviar</button>
+</div>
+    <h1>Listado de productos actualizado:</h1>
+<div>
+    <ol id="productsRealTime"></ol>
+</div>
+
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/realTimeProducts.js"></script>

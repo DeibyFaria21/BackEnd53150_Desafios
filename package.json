@@ -2,14 +2,17 @@
   "name": "desafios",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node --watch desafio3_EndPointsGets/src/app.js"
+    "start": "node --watch desafio4_HandlebarsWebsockets/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2",
+    "socket.io": "^4.7.5"
   }
 }
