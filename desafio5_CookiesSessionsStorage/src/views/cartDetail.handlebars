@@ -1,0 +1,67 @@
+<div id="header">
+    <a href="/api/products" class="cart-text">
+      <h3>PRODUCTOS</h3>
+    </a>
+</div>
+<div>
+    {{#if user}}
+        <h2>Hola {{user.first_name}}, este es tu carrito!</h2>
+        <div style="display: flex; gap: 10px">
+            <form action="/profile">
+                <button type="submit">Mi Perfil</button>
+            </form>
+            <form action="/api/sessions/logout" method="POST">
+                <button type="submit">Cerrar Sesión</button>
+            </form>
+        </div>
+    {{/if}}
+</div>
+<div>
+    <h1>Productos en el carrito...</h1>
+</div>
+<div>
+  <ul>
+    {{#each products}}
+      <li>
+        <div class="product-info">
+          <div class="product-property">
+            <span class="property-title">Producto ID:</span>
+            <span class="property-value">{{ this.productId._id }}</span>
+          </div>
+          <div class="product-property">
+            <span class="property-title">Nombre:</span>
+            <span class="property-value">{{ this.productId.title }}</span>
+          </div>
+          <div class="product-property">
+            <span class="property-title">Categoría:</span>
+            <span class="property-value">{{ this.productId.category }}</span>
+          </div>
+          <div class="product-property">
+            <span class="property-title">Precio:</span>
+            <span class="property-value">{{ this.productId.price }}</span>
+          </div>
+          <div class="product-property">
+            <span class="property-title">Cantidad:</span>
+            <span class="property-value">{{ this.quantity }}</span>
+          </div>
+        </div>
+        <form action="/api/carts/664d73c255cc4eb27f46d21c/product/{{this.productId._id}}?_method=DELETE" method="POST" class="delete-form">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit">Eliminar</button>
+                </form>
+        <br/>
+      </li>
+    {{/each}}
+  </ul>
+  <br/>
+    <div>
+        <form action="/api/carts/664d73c255cc4eb27f46d21c?_method=DELETE" method="POST" class="delete-all-form">
+            <button type="submit">Vaciar Carrito</button>
+        </form>
+    </div>
+</div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
+{{!-- <script src="/js/cartDetails.js"></script> --}}

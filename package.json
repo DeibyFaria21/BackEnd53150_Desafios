@@ -1,18 +1,26 @@
 {
-  "name": "desafios",
+  "name": "proyectofinal",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node --watch desafio4_HandlebarsWebsockets/app.js"
+    "start": "node --watch desafio5_CookiesSessionsStorage/src/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
+    "connect-mongo": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "express-handlebars": "^7.1.2",
+    "express-session": "^1.18.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.4.0",
+    "mongoose-paginate-v2": "^1.8.2",
+    "session-file-store": "^1.5.0",
     "socket.io": "^4.7.5"
   }
 }

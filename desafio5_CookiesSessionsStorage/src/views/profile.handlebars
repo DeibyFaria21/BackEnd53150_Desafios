@@ -1,0 +1,24 @@
+<div style="display: flex; gap: 50px">
+    <a href="/api/products" class="cart-text">
+      <h3>PRODUCTOS</h3>
+    </a>
+    <a href="/api/carts/664d73c255cc4eb27f46d21c" class="cart-text">
+      <h3>CARRITO</h3>
+    </a>
+</div>
+<h2>Perfil de Usuario</h2>
+<p>Nombre: {{user.first_name}}</p>
+<p>Apellido: {{user.last_name}}</p>
+<p>Email: {{user.email}}</p>
+<p>Edad: {{user.age}}</p>
+<form action="/api/sessions/logout" method="POST">
+    <button type="submit">Cerrar Sesión</button>
+</form>
+{{!-- <div style="display: flex; gap: 10px;">
+    <form action="/profile" method="">
+        <button type="submit">Sesión</button>
+    </form>
+    <form action="/api/sessions/logout" method="POST">
+        <button type="submit">Cerrar Sesión</button>
+    </form>
+</div> --}}
