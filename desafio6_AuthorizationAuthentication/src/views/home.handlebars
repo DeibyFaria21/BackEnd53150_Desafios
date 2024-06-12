@@ -1,0 +1,69 @@
+<div id="header">
+    <a href="/api/carts/664d73c255cc4eb27f46d21c" class="cart-text">
+      <h3>CARRITO</h3>
+    </a>
+</div>
+<div>
+    {{#if user}}
+        <h2>Bienvenido, {{user.first_name}} {{user.last_name}}!!</h2>
+        <h4>Actualmente tu role es: {{user.role}}.</h4>
+        <div style="display: flex; gap: 10px">
+            <form action="/profile">
+                <button type="submit">Mi Perfil</button>
+            </form>
+            <form action="/api/sessions/logout" method="POST">
+                <button type="submit">Cerrar Sesión</button>
+            </form>
+        </div>
+    {{/if}}
+</div>
+<div>
+    <h1>Listado de productos...</h1>
+</div>
+<div>
+    <ul id="products">
+        {{#each payload.payload}}
+            <br/>
+            <li>
+                <strong>Producto ID:</strong> {{this._id}}<br>
+                <strong>Título:</strong> {{this.title}}<br>
+                <strong>Descripción:</strong> {{this.description}}<br>
+                <strong>Código:</strong> {{this.code}}<br>
+                <strong>Precio:</strong> {{this.price}}<br>
+                <strong>Estado:</strong> {{this.status}}<br>
+                <strong>Stock:</strong> {{this.stock}}<br>
+                <strong>Categoría:</strong> {{this.category}}<br>
+                <strong>Thumbnail:</strong> {{this.thumbnail}}<br>
+                <br>
+                <form action="/api/carts/add" method="POST">
+                    <input type="hidden" name="productId" value="{{this._id}}">
+                    <label for="quantity">Cantidad:</label>
+                    <input type="number" name="quantity" value="1" min="1">
+                    <button type="submit">Agregar al carrito</button>
+                </form>
+                <br/>
+                <a href="/api/products/{{this._id}}">Ver detalles</a>
+                <br/>
+                <br/>
+                <hr>
+            </li>
+        {{/each}}
+    </ul>
+</div>
+<div>
+    {{#if payload.pagination.hasPrevPage}}
+        <a href={{payload.pagination.prevLink}}><< Anterior</a>
+    {{/if}}
+    &nbsp;
+    Página {{payload.pagination.currentPage}} de {{payload.pagination.totalPages}}
+    &nbsp;
+    {{#if payload.pagination.hasNextPage}}
+    <a href={{payload.pagination.nextLink}}>Siguiente >></a>
+    {{/if}}
+</div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
+
+{{!-- http://localhost:8080/api/products?page=3&limit=3&category=tecladoMecanico&sort=desc --}}

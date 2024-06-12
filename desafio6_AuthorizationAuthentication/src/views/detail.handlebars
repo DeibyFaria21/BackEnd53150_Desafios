@@ -1,0 +1,33 @@
+<div id="header">
+    <a href="/api/carts/664d73c255cc4eb27f46d21c" class="cart-text">
+      <h1>CARRITO</h1>
+    </a>
+</div>
+<div>
+    <h1>Detalles del Producto</h1>
+</div>
+<div>
+    <ul>
+        <strong>Producto ID:</strong> {{product._id}}<br>
+        <strong>Título:</strong> {{product.title}}<br>
+        <strong>Descripción:</strong> {{product.description}}<br>
+        <strong>Código:</strong> {{product.code}}<br>
+        <strong>Precio:</strong> {{product.price}}<br>
+        <strong>Estado:</strong> {{product.status}}<br>
+        <strong>Stock:</strong> {{product.stock}}<br>
+        <strong>Categoría:</strong> {{product.category}}<br>
+        <strong>Thumbnail:</strong> {{product.thumbnail}}<br>
+    </ul>
+    <form action="/api/carts/add" method="POST">
+        <input type="hidden" name="productId" value="{{product._id}}">
+        <label for="quantity">Cantidad:</label>
+        <input type="number" name="quantity" value="1" min="1">
+        <button type="submit">Agregar al carrito</button>
+    </form>
+    <br/>
+    <a href="/api/products">Volver a la lista de productos</a>
+</div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
