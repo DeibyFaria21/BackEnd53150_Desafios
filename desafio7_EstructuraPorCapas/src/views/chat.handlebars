@@ -1,0 +1,18 @@
+<form id="messageForm">
+    <label for="user">Ingrese su email:</label>
+    <input type="text" id="user" placeholder="Usuario" required>
+    <label for="message">Ingrese su mensaje:</label>
+    <input type="text" id="text" placeholder="Mensaje" required>
+    <button type="submit" id="btn-send">Enviar</button>
+</form>
+<div>
+    <ul id="messages">
+        {{#each messages}}
+            <li><strong>User: </strong>{{this.user}}, <strong>Mensaje: </strong>{{this.message}}</li>
+        {{/each}}
+    </ul>
+</div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/chat.js"></script>

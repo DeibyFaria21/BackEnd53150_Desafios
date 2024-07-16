@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "title": "Teclado Mecánico Razer BlackWidow",
+    "description": "Teclado mecánico gaming con switches Razer Green.",
+    "code": "RAZER001",
+    "price": 99.99,
+    "status": true,
+    "stock": 50,
+    "category": "Gaming",
+    "thumbnail": "https://example.com/teclado1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Teclado Mecánico Corsair K70",
+    "description": "Teclado mecánico con switches Cherry MX Brown.",
+    "code": "CORSAIR002",
+    "price": 129.99,
+    "status": true,
+    "stock": 30,
+    "category": "Gaming",
+    "thumbnail": "https://example.com/teclado2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Teclado Mecánico Logitech G Pro",
+    "description": "Teclado mecánico con switches Romer-G.",
+    "code": "LOGITECH003",
+    "price": 79.99,
+    "status": true,
+    "stock": 20,
+    "category": "Gaming",
+    "thumbnail": "https://example.com/teclado3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Teclado Mecánico SteelSeries Apex Pro",
+    "description": "Teclado mecánico con switches OmniPoint.",
+    "code": "STEELSERIES004",
+    "price": 179.99,
+    "status": true,
+    "stock": 15,
+    "category": "Gaming",
+    "thumbnail": "https://example.com/teclado4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Teclado Mecánico Ducky One 2 Mini",
+    "description": "Teclado mecánico 60% con switches Cherry MX Red.",
+    "code": "DUCKY005",
+    "price": 109.99,
+    "status": true,
+    "stock": 25,
+    "category": "Gaming",
+    "thumbnail": "https://example.com/teclado5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Teclado Mecánico HyperX Alloy Origins",
+    "description": "Teclado mecánico con switches HyperX Red.",
+    "code": "HYPERX006",
+    "price": 89.99,
+    "status": true,
+    "stock": 35,
+    "category": "Gaming",
+    "thumbnail": "https://example.com/teclado6.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Teclado Mecánico Razer Huntsman Elite",
+    "description": "Teclado mecánico con switches ópticos Razer.",
+    "code": "RAZER007",
+    "price": 149.99,
+    "status": true,
+    "stock": 40,
+    "category": "Gaming",
+    "thumbnail": "https://example.com/teclado7.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Teclado Mecánico Corsair K95 RGB Platinum",
+    "description": "Teclado mecánico con switches Cherry MX Speed.",
+    "code": "CORSAIR008",
+    "price": 169.99,
+    "status": true,
+    "stock": 10,
+    "category": "Gaming",
+    "thumbnail": "https://example.com/teclado8.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Teclado Mecánico Logitech G915",
+    "description": "Teclado mecánico inalámbrico con switches GL Tactile",
+    "code": "LOGITECH009",
+    "price": 199.99,
+    "status": true,
+    "stock": 5,
+    "category": "Gaming",
+    "thumbnail": "https://example.com/teclado9.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Teclado Mecánico Razer Cynosa V2",
+    "description": "Teclado membranal con iluminación RGB.",
+    "code": "RAZER010",
+    "price": 69.99,
+    "status": true,
+    "stock": 60,
+    "category": "Gaming",
+    "thumbnail": "https://example.com/teclado10.jpg"
+  }
+]
